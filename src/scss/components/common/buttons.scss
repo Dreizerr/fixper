@@ -1,0 +1,36 @@
+.button {
+  cursor: pointer;
+  text-align: center;
+  max-width: 222px;
+  width: 100%;
+  transition: ease 0.7s;
+  font-size: 16px;
+  border-radius: 15px;
+  padding: 18px;
+}
+
+.button--yellow {
+  background: transparent;
+  color: #ffc464;
+  &:visited {
+    color: #ffc464;
+  }
+  border: 2px solid #ffc464;
+  @media (any-hover: hover) {
+    &:hover {
+      color: white;
+      background-color: #ffc464;
+    }
+  }
+}
+
+.button--black {
+  color: white;
+  background: black;
+  @media (any-hover: hover) {
+    &:hover {
+      background: white;
+      color: black;
+    }
+  }
+}

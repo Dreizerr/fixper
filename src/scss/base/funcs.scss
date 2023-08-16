@@ -1,0 +1,3 @@
+@function percent($firstValue, $secondValue) {
+  @return calc($firstValue / $secondValue) * 100%;
+}

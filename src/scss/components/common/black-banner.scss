@@ -1,0 +1,33 @@
+.black-banner {
+  width: 100%;
+  background-color: black;
+  padding: 15px 30px;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.black-banner__close {
+  cursor: pointer;
+}
+.black-banner__content {
+  font-weight: 600;
+  font-size: 16px;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #78c23e;
+  }
+}
+
+.black-banner__link {
+  font-size: 16px;
+  cursor: pointer;
+  color: var(--main-yellow);
+}

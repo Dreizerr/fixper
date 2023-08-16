@@ -1,0 +1,20 @@
+@import "base/nullstyle";
+@import "base/generals";
+
+@import "https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css";
+
+@import "components/common/logo";
+@import "components/common/location";
+@import "components/common/buttons";
+@import "components/common/black-banner";
+@import "components/common/team-card";
+@import "components/common/review-card";
+@import "components/common/slider-controlls";
+
+@import "components/blocks/header";
+@import "components/blocks/intro";
+@import "components/blocks/benefits";
+@import "components/blocks/online-diagnostics";
+@import "components/blocks/price";
+@import "components/blocks/our-team";
+@import "components/blocks/reviews";
