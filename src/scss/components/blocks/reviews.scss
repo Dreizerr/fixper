@@ -1,6 +1,7 @@
 .reviews {
 }
 .reviews__container {
+  padding: 100px 15px;
 }
 .reviews__title {
   text-align: center;
@@ -37,4 +38,47 @@
 .reviews-swiper__next {
 }
 .slider-next {
+}
+
+.reviews-companies {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  justify-content: space-around;
+  gap: 20px;
+}
+.reviews-companies__item {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.reviews-companies__rating {
+  &::before {
+    content: "";
+    display: inline-block;
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+    background: url(../images/star.svg) center / cover no-repeat;
+  }
+}
+.reviews-companies__current-rating {
+  font-weight: 700;
+  font-size: 35px;
+}
+.reviews-companies__max-rating {
+  font-weight: 500;
+  font-size: 25px;
+}
+.reviews-companies__rating-count {
+  font-size: 16px;
+}
+.reviews-companies__border {
+  height: 65px;
+  width: 1px;
+  background: #e3e3e3;
+}
+.reviews-companies__company {
+}
+.reviews-companies__company-img {
 }
