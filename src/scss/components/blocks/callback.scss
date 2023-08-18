@@ -1,0 +1,72 @@
+.callback {
+  background: url(../images/callback/background.png) center / cover no-repeat;
+}
+.callback__container {
+  max-width: 1370px;
+  padding: 100px 15px;
+}
+.callback__body {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  border-radius: 15px;
+  background: #fff;
+  padding: 50px 85px;
+}
+.callback__header {
+  width: 40%;
+}
+.callback__title {
+}
+.callback__text {
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.callback__form {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.callback__input {
+  width: 50%;
+}
+
+.callback__button {
+  max-width: 100%;
+  width: 50%;
+}
+
+@media (max-width: 1200px) {
+  .callback__body {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .callback__header {
+    width: 100%;
+  }
+
+  .callback__form {
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 390px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .callback__input {
+    width: 100%;
+  }
+
+  .callback__button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .callback__body {
+    padding: 75px 30px;
+  }
+}

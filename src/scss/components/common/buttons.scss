@@ -1,4 +1,5 @@
 .button {
+  display: block;
   cursor: pointer;
   text-align: center;
   max-width: 222px;
@@ -31,6 +32,36 @@
     &:hover {
       background: white;
       color: black;
+    }
+  }
+}
+
+.button--purple {
+  background-color: var(--main-purple);
+  color: white;
+  &:visited {
+    color: white;
+  }
+  @media (any-hover: hover) {
+    border: 1px solid var(--main-purple);
+    &:hover {
+      background-color: white;
+      color: black;
+      &:visited {
+        color: black;
+      }
+    }
+  }
+}
+
+.button--transparent {
+  background: transparent;
+  border: 1px solid var(--main-purple);
+  color: var(--main-purple);
+  @media (any-hover: hover) {
+    &:hover {
+      background: var(--main-purple);
+      color: white;
     }
   }
 }
