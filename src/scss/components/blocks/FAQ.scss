@@ -1,0 +1,59 @@
+.FAQ {
+}
+.FAQ__container {
+  padding: 100px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.FAQ__block-text {
+  flex: 0 1 330px;
+}
+.FAQ__title {
+}
+.FAQ__desc {
+  margin-top: 20px;
+}
+
+.FAQ__link {
+  &:visited {
+    color: var(--main-purple);
+  }
+  @media (any-hover: hover) {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.FAQ__block-spollers {
+  flex: 0 1 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.FAQ-spoller {
+}
+.FAQ-spoller__title {
+}
+.FAQ-spoller__body {
+}
+
+.FAQ-spoller__title-button {
+}
+
+@media (max-width: 1000px) {
+  .FAQ__container {
+    flex-direction: column;
+  }
+
+  .FAQ__block-text {
+    text-align: center;
+    flex: unset;
+    margin-bottom: 50px;
+  }
+  .FAQ__block-spollers {
+    flex: unset;
+  }
+}

@@ -14,7 +14,7 @@
     z-index: -1;
     @media (max-width: 1450px) {
       & {
-        display: none;
+        right: 50px;
       }
     }
   }
@@ -90,9 +90,14 @@
     background: url(../images/square-star.svg) center no-repeat;
   }
   @media (max-width: 1450px) {
-    & {
-      display: none;
-    }
+    width: 400px;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  @media (max-width: 1200px) {
+    position: static;
+    transform: unset;
+    margin: 0 auto;
   }
 }
 .online-diagnostics__img {

@@ -9,7 +9,7 @@ if (document.querySelector(`.our-team-swiper`)) {
       delay: 3000,
     },
     speed: 1500,
-
+    simulateTouch: false,
     pagination: {
       clickable: true,
       el: ".our-team-swiper__pagination",
@@ -39,9 +39,8 @@ if (document.querySelector(`.our-team-swiper`)) {
 if (document.querySelector(`.reviews-swiper`)) {
   const reviewsSwiper = new Swiper(".reviews-swiper", {
     modules: [Navigation, Pagination],
-
+    simulateTouch: false,
     speed: 1500,
-    // autoHeight: true,
 
     pagination: {
       clickable: true,
