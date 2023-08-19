@@ -4,6 +4,10 @@
 
 @import "fonts";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   @include adaptive-value("font-size", 18, 16, $type);
   font-family: var(--main-font);
