@@ -1,0 +1,30 @@
+.choices {
+  &:has(.select) {
+    color: var(--main-purple);
+    font-weight: 500;
+
+    .choices__placeholder {
+      opacity: 1;
+    }
+
+    .choices__inner {
+      &:has(.select) {
+        border-color: var(--main-purple);
+        text-align: center;
+      }
+    }
+
+    .choices__list {
+      [role="option"].choices__placeholder {
+        display: none;
+      }
+    }
+
+    &::after {
+      border-color: var(--main-purple) transparent transparent;
+    }
+  }
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}

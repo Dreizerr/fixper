@@ -17,9 +17,9 @@
     }
     @media (max-width: 1200px) {
       top: unset;
-      bottom: 0;
+      bottom: 100px;
       rotate: 90deg;
-      right: 150px;
+      right: 110px;
       height: 800px;
     }
   }
@@ -41,7 +41,6 @@
   position: relative;
   max-width: 650px;
   @media (max-width: 1200px) {
-    margin-top: 25px;
     max-width: 100%;
   }
 }
@@ -129,6 +128,7 @@
     transform: unset;
     margin: 0 auto;
     margin-top: 20px;
+    max-width: 100%;
   }
 }
 .online-diagnostics__img {
