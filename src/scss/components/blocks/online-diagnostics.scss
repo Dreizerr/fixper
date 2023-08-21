@@ -13,10 +13,18 @@
     right: 100px;
     z-index: -1;
     @media (max-width: 1450px) {
-      & {
-        right: 50px;
-      }
+      right: 50px;
     }
+    @media (max-width: 1200px) {
+      top: unset;
+      bottom: 0;
+      rotate: 90deg;
+      right: 150px;
+      height: 800px;
+    }
+  }
+  @media (max-width: 1200px) {
+    overflow: hidden;
   }
 }
 
@@ -25,20 +33,30 @@
   padding: 115px 15px;
   @media (max-width: 1000px) {
     & {
-      flex-direction: column;
+      // flex-direction: column;
     }
   }
 }
 .online-diagnostics__content {
   position: relative;
   max-width: 650px;
+  @media (max-width: 1200px) {
+    margin-top: 25px;
+    max-width: 100%;
+  }
 }
 
 .online-diagnostics__pre-title {
   text-transform: uppercase;
+  @media (max-width: 1200px) {
+    text-align: center;
+  }
 }
 .online-diagnostics__title {
   margin-top: 10px;
+  @media (max-width: 1200px) {
+    text-align: center;
+  }
 }
 .online-diagnostics-problems {
   margin-top: 30px;
@@ -47,6 +65,9 @@
   flex-wrap: wrap;
   column-gap: 15px;
   row-gap: 20px;
+  @media (max-width: 1200px) {
+    display: none;
+  }
 }
 .online-diagnostics-problems__item {
   cursor: pointer;
@@ -75,6 +96,12 @@
     height: 34px;
     background: url(../images/danger.svg) center no-repeat;
   }
+  @media (max-width: 1200px) {
+    width: 100%;
+    margin-top: 25px;
+    text-align: center;
+    justify-content: center;
+  }
 }
 .online-diagnostics__block-img {
   position: absolute;
@@ -95,9 +122,13 @@
     transform: translate(0, -50%);
   }
   @media (max-width: 1200px) {
-    position: static;
+    top: unset;
+    right: unset;
+    width: max-content;
+    position: relative;
     transform: unset;
     margin: 0 auto;
+    margin-top: 20px;
   }
 }
 .online-diagnostics__img {

@@ -1,6 +1,7 @@
 import Swiper from "swiper";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
+
 if (document.querySelector(`.our-team-swiper`)) {
   const ourTeamSwiper = new Swiper(".our-team-swiper", {
     modules: [Navigation, Pagination, Autoplay],
